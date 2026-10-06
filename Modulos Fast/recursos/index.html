@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingresar — FAST Gestión de Calidad</title>
+<link rel="stylesheet" href="./CSS-inicio secion/styles_inicio_secion.css.css">
+<script src="./js/main.js"></script>
+</head>
+<body>
+  <div class="pagina">
+    <aside class="panel-marca">
+      <div class="marca-contenido">
+        <div class="logo-caja">
+          <img src="img/logo.png" alt="FAST Gestión de Calidad">
+        </div>
+        <h2>Gestión de calidad</h2>
+        <p class="lead">Registre inspecciones, controle no conformidades y genere reportes sin salir de la obra.</p>
+        <ul class="caracteristicas">
+          <li>Checklists de verificación según ISO 9001</li>
+          <li>Registro fotográfico de inspecciones en campo</li>
+          <li>Reportes listos para auditoría en minutos</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="panel-form">
+      <form class="formulario" id="formLogin" novalidate>
+        <h1>Ingresar</h1>
+        <p class="sub">Ingrese sus credenciales para continuar</p>
+
+        <p class="aviso" id="aviso" role="alert"></p>
+
+        <div class="campo">
+          <label for="usuario">Usuario</label>
+          <input id="usuario" name="usuario" type="text" autocomplete="username"
+                 placeholder="nombre.apellido" required>
+        </div>
+
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <div class="entrada">
+            <input id="clave" name="clave" type="password" autocomplete="current-password"
+                   placeholder="••••••••" required>
+            <button type="button" class="ver" id="verClave" aria-label="Mostrar contraseña">Mostrar</button>
+          </div>
+        </div>
+
+        <div class="fila">
+          <label class="recordar" for="recordar">
+            <input id="recordar" type="checkbox"> Recordar usuario
+          </label>
+          <a class="enlace" href="">¿Olvidó su clave?</a>
+        </div>
+
+        <a href="administracion.html">Ingresar</a>
+
+        <p class="pie">¿No tiene cuenta? <a href="#">Solicite acceso</a> al administrador de calidad.</p>
+      </form>
+    </main>
+  </div>
+
+<script>
+
+</script>
+</body>
+</html>

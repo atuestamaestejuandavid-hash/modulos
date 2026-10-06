@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Norma</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+    <header class="head">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo" width="200" height="150">
+        </div>
+
+        <section class="lis_head">
+            <details class="user-menu">
+                <summary><div class="avatar">MR</div></summary>
+
+                <div class="menu">
+                    <div class="info">
+                        <div class="avatar grande">MR</div>
+                        <div>
+                            <strong>Mariana Restrepo</strong>
+                            <small>mariana.restrepo@fast.com</small>
+                            <a href="#">Ver mi perfil</a>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#">👤 Mi cuenta</a></li>
+                        <li><a href="#">🔄 Cambiar de cuenta <span class="flecha">›</span></a></li>
+                        <li><a href="#">🚪 Salir</a></li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+    </header>
+
+    <main class="contenedor">
+        <section class="links">
+            <a href="administracion.html">Administración</a>
+            <a href="#" class="activo">Gestión Norma</a>
+            <a href="Plan_trabajo.html">Plan de Trabajo</a>
+            <a href="Ejecucion_Actividades.html">Ejecución de Actividades</a>
+            <a href="Reportes.html">Reportes</a>
+        </section>
+
+        <div class="contenido">
+
+            <section class="title">
+                <h1>Gestión Norma</h1>
+            </section>
+
+            <!-- ========== NORMAS ========== -->
+            <section class="tabla_1">
+                <div class="encabezado_seccion">
+                    <p>Normas</p>
+                    <button class="btn_generar">+ Añadir Norma</button>
+                </div>
+
+                <table class="tabla">
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Creacion</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td>ISO 9001:2015</td>
+                        <td>Sistema de Gestión de la Calidad</td>
+                        <td>10/05/2020</td>
+                        <td><span class="vigente">vigente</span></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- ========== REQUISITOS ========== -->
+            <section class="tabla_1">
+                <div class="encabezado_seccion">
+                    <p>Requisitos</p>
+                    <button class="btn_generar">+ Añadir Requisito</button>
+                </div>
+
+                <table class="tabla">
+                    <tr>
+                        <th>Requisito</th>
+                        <th>Norma</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td>Control de Documentos</td>
+                        <td>ISO 9001:2015</td>
+                        <td><span class="vigente">vigente</span></td>
+                    </tr>
+                    <tr>
+                        <td>Auditorías Internas</td>
+                        <td>ISO 9001:2015</td>
+                        <td><span class="vigente">vigente</span></td>
+                    </tr>
+                    <tr>
+                        <td>Acciones Correctivas</td>
+                        <td>ISO 9001:2015</td>
+                        <td><span class="vigente">vigente</span></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- ========== ACTIVIDADES ========== -->
+            <section class="tabla_1">
+                <div class="encabezado_seccion">
+                    <p>Actividades</p>
+                    <button class="btn_generar">+ Añadir Actividad</button>
+                </div>
+
+                <table class="tabla">
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Requisito</th>
+                        <th>Responsable</th>
+                        <th>Fecha Límite</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td>Revisión de Manual</td>
+                        <td>Control de Documentos</td>
+                        <td>Carlos Ruiz</td>
+                        <td>20/02/2023</td>
+                        <td><span class="vigente">vigente</span></td>
+                    </tr>
+                    <tr>
+                        <td>Auditoría Interna Q1</td>
+                        <td>Auditorías Internas</td>
+                        <td>María Gomez</td>
+                        <td>15/03/2023</td>
+                        <td><span class="vigente">vigente</span></td>
+                    </tr>
+                    <tr>
+                        <td>Implementar ACC</td>
+                        <td>Acciones Correctivas</td>
+                        <td>Raquel Torres</td>
+                        <td>30/03/2023</td>
+                        <td><span class="vigente">vigente</span></td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
