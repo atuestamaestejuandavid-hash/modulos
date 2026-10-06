@@ -1,0 +1,343 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+.up{
+    text-align:left;
+}
+
+/* =========================
+   CABECERA
+========================= */
+
+.head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+    background:white;
+    border-bottom:1px solid #9e9e9e;
+    padding:0 30px;
+}
+
+.logo{
+    text-align: left;
+}
+
+.logo img{
+    width:100px;
+    height:auto;
+}
+
+.lis_head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.lis_head select{
+    width:250px;
+    height:30px;
+}
+
+/* =========================
+   MENÚ DE USUARIO (LISTA DESPLEGABLE)
+========================= */
+
+.user-menu{
+    position:relative;
+    z-index:100;
+}
+
+.user-menu summary{
+    list-style:none;
+    cursor:pointer;
+}
+
+.user-menu summary::-webkit-details-marker{
+    display:none;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#3152b5;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.avatar.grande{
+    width:48px;
+    height:48px;
+    flex-shrink:0;
+}
+
+.menu{
+    position:absolute;
+    right:0;
+    top:52px;
+    width:300px;
+    background:#282828;
+    color:#f1f1f1;
+    border-radius:14px;
+    box-shadow:0 8px 24px rgba(0,0,0,.5);
+    overflow:hidden;
+}
+
+.info{
+    display:flex;
+    gap:14px;
+    padding:16px;
+}
+
+.info strong{
+    display:block;
+    font-size:16px;
+}
+
+.info small{
+    color:#aaa;
+}
+
+.info a{
+    display:block;
+    margin-top:6px;
+    color:#3ea6ff;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.menu ul{
+    list-style:none;
+    padding:8px 0;
+    border-top:1px solid #3d3d3d;
+}
+
+.menu li a{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:11px 16px;
+    color:inherit;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.menu li a:hover{
+    background:rgba(255,255,255,.1);
+}
+
+.menu .flecha{
+    margin-left:auto;
+    font-size:20px;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.contenedor{
+    display:flex;
+}
+
+/* =========================
+   MENÚ LATERAL
+========================= */
+
+.links{
+    width:220px;
+    min-height:10vh;
+    background:white;
+    border-right:1px solid #9e9e9e;
+}
+
+.links a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    text-align:center;
+    padding: 20px;
+    border-bottom:1px solid #dcdcdc;
+}
+
+.links a:hover{
+    background:#0095ff;
+    color:white;
+}
+
+.links a:last-child{
+    background:#008ceb;
+    color:rgb(255, 255, 255);
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.contenido{
+    padding:40px;
+    width:100%;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.title h1{
+    color:#3152b5;
+    font-size:55px;
+    font-weight:normal;
+}
+
+.title::after{
+    content:"";
+    display:block;
+    border-bottom:1px solid #777;
+    margin-top:15px;
+    margin-bottom:30px;
+}
+
+/* =========================
+   FILTROS
+========================= */
+
+.litas{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.litas label{
+    display:block;
+    background:#00c7d4;
+    padding:5px 15px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.litas select{
+    width:180px;
+    height:35px;
+    border:1px solid #ccc;
+}
+
+.fecha-grupo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.fecha-grupo input[type="date"]{
+    width:150px;
+    height:35px;
+    padding:5px 10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.botones{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.btn_generar{
+    background:#36c947;
+    border:none;
+    padding:10px 20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn_descargar{
+    background:#00c7d4;
+    border:none;
+    padding:10px 20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn_generar.generado{
+    color:#000 !important;
+}
+
+.btn_descargar.descargado-principal{
+    color:#000 !important;
+}
+
+/* =========================
+   TABLA
+========================= */
+
+.tabla_1 p{
+    color:#3152b5;
+    font-size:18px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.tabla, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+.tabla{
+    width:900px;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+.tabla th{
+    background:#00c7d4;
+    color:black;
+    padding:10px;
+    border:1px solid #dcdcdc;
+}
+
+.tabla td{
+    padding:10px;
+    border:1px solid #dcdcdc;
+}
+
+.tabla td:last-child{
+    text-align:center;
+}
+
+.tabla td button{
+    background:none;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.tabla button.descargado{
+    background: #fefefe;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: default;
+}

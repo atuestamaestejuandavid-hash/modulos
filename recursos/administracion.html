@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+    <header class="head">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo" width="200" height="150">
+        </div>
+
+        <section class="lis_head">
+            <details class="user-menu">
+                <summary><div class="avatar">MR</div></summary>
+
+                <div class="menu">
+                    <div class="info">
+                        <div class="avatar grande">MR</div>
+                        <div>
+                            <strong>Mariana Restrepo</strong>
+                            <small>mariana.restrepo@fast.com</small>
+                            <a href="#">Ver mi perfil</a>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#">👤 Mi cuenta</a></li>
+                        <li><a href="#">🔄 Cambiar de cuenta <span class="flecha">›</span></a></li>
+                        <li><a href="#">🚪 Salir</a></li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+    </header>
+
+    <main class="contenedor">
+        <section class="links">
+            <a href="#" class="activo">Administración</a>
+            <a href="Gestion norma.html">Gestión Norma</a>
+            <a href="Plan_trabajo.html">Plan de Trabajo</a>
+            <a href="Ejecucion_Actividades.html">Ejecución de Actividades</a>
+            <a href="Reportes.html">Reportes</a>
+        </section>
+
+        <div class="contenido">
+
+            <section class="title">
+                <h1>Administración</h1>
+            </section>
+
+            <!-- ========== USUARIOS ========== -->
+            <section class="tabla_1">
+                <div class="encabezado_seccion">
+                    <p>Usuarios</p>
+                    <button class="btn_generar">+ Añadir Usuario</button>
+                </div>
+
+                <table class="tabla">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td>Maria Gomez</td>
+                        <td>mariagomez@email.com</td>
+                        <td>Supervisor</td>
+                        <td><span class="vigente">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Ruiz</td>
+                        <td>carlosruiz@email.com</td>
+                        <td>Empleado</td>
+                        <td><span class="vigente">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Raquel Torres</td>
+                        <td>torres@email.com</td>
+                        <td>Administrador</td>
+                        <td><span class="vigente">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Mendoza</td>
+                        <td>D.mendoza@email.com</td>
+                        <td>Administrador</td>
+                        <td><span class="vigente">Activo</span></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- ========== SEDES ========== -->
+            <section class="tabla_1">
+                <div class="encabezado_seccion">
+                    <p>Sedes</p>
+                    <button class="btn_generar">+ Añadir Sedes</button>
+                </div>
+
+                <table class="tabla">
+                    <tr>
+                        <th>Sedes</th>
+                        <th>Dirección</th>
+                    </tr>
+                    <tr>
+                        <td>Oficina Central</td>
+                        <td>Av. Principal 123, Ciudad</td>
+                    </tr>
+                    <tr>
+                        <td>Planta Norte</td>
+                        <td>Parque Industrial Norte, Edificio 5</td>
+                    </tr>
+                    <tr>
+                        <td>Sucursal Sur</td>
+                        <td>Calle Las Flores 456, Sector Sur</td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>

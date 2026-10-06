@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Trabajo</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+    <header class="head">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo" width="200" height="150">
+        </div>
+
+        <section class="lis_head">
+            <details class="user-menu">
+                <summary><div class="avatar">MR</div></summary>
+
+                <div class="menu">
+                    <div class="info">
+                        <div class="avatar grande">MR</div>
+                        <div>
+                            <strong>Mariana Restrepo</strong>
+                            <small>mariana.restrepo@fast.com</small>
+                            <a href="#">Ver mi perfil</a>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#">👤 Mi cuenta</a></li>
+                        <li><a href="#">🔄 Cambiar de cuenta <span class="flecha">›</span></a></li>
+                        <li><a href="#">🚪 Salir</a></li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+    </header>
+
+    <main class="contenedor">
+        <section class="links">
+            <a href="administracion.html">Administración</a>
+            <a href="Gestion norma.html">Gestión Norma</a>
+            <a href="#" class="activo">Plan de Trabajo</a>
+            <a href="Ejecucion_Actividades.html">Ejecución de Actividades</a>
+            <a href="Reportes.html">Reportes</a>
+        </section>
+
+        <div class="contenido">
+
+            <section class="title">
+                <h1>Plan de Trabajo</h1>
+            </section>
+
+            <!-- ========== PARTE SUPERIOR: CALENDARIO (izquierda) + LEYENDA DE COLORES (derecha) ========== -->
+            <div class="plan_superior">
+
+                <!-- ----- CALENDARIO ----- -->
+                <section class="calendario_caja">
+                    <table class="calendario">
+                        <tr>
+                            <th colspan="7" class="mes">JULIO</th>
+                        </tr>
+                        <tr class="dias_semana">
+                            <th>DOM</th><th>LUN</th><th>MAR</th><th>MIE</th><th>JUE</th><th>VIE</th><th>SAB</th>
+                        </tr>
+                        <tr>
+                            <td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+                        </tr>
+                        <tr>
+                            <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                        </tr>
+                        <tr>
+                            <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+                        </tr>
+                        <tr>
+                            <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- ----- BOTÓN + LEYENDA DE ÁREAS Y COLORES ----- -->
+                <section class="plan_derecha">
+                    <div class="boton_derecha">
+                        <button class="btn_generar">+Añadir Plan de Trabajo</button>
+                    </div>
+
+                    <table class="tabla leyenda">
+                        <tr>
+                            <th>Area</th>
+                            <th>Color</th>
+                        </tr>
+                        <tr>
+                            <td>Recursos Humanos</td>
+                            <td><span class="cuadro_color color_rojo"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Comercial</td>
+                            <td><span class="cuadro_color color_celeste"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Compras</td>
+                            <td><span class="cuadro_color color_amarillo"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Gerencia</td>
+                            <td><span class="cuadro_color color_morado"></span></td>
+                        </tr>
+                    </table>
+                </section>
+
+            </div>
+
+            <!-- ========== PLANES DE TRABAJO (tabla inferior) ========== -->
+            <section class="tabla_1">
+                <div class="encabezado_seccion">
+                    <p></p>
+                    <button class="btn_generar">+Añadir Plan de Trabajo</button>
+                </div>
+
+                <table class="tabla">
+                    <tr>
+                        <th>No</th>
+                        <th>Color</th>
+                        <th>Supervisor</th>
+                        <th>Fecha de Creación</th>
+                        <th>Estado</th>
+                        <th>Tareas</th>
+                        <th>Estado</th>
+                        <th colspan="2">Acciones</th> <!-- en el prototipo dice "vcvxcvc" -->
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td><span class="cuadro_color color_rojo"></span></td>
+                        <td>Plan de acción</td>
+                        <td>15/04/2024</td>
+                        <td><span class="vigente">vigente</span></td>
+                        <td>5</td>
+                        <td><span class="vigente">vigente</span></td>
+                        <td><button title="Editar">✏️</button></td>
+                        <td><button title="Ver">👁️</button></td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>

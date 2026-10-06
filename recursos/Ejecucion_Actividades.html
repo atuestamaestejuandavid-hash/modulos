@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecución de Actividades</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+    <header class="head">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo" width="200" height="150">
+        </div>
+
+        <section class="lis_head">
+            <details class="user-menu">
+                <summary><div class="avatar">MR</div></summary>
+
+                <div class="menu">
+                    <div class="info">
+                        <div class="avatar grande">MR</div>
+                        <div>
+                            <strong>Mariana Restrepo</strong>
+                            <small>mariana.restrepo@fast.com</small>
+                            <a href="#">Ver mi perfil</a>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#">👤 Mi cuenta</a></li>
+                        <li><a href="#">🔄 Cambiar de cuenta <span class="flecha">›</span></a></li>
+                        <li><a href="#">🚪 Salir</a></li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+    </header>
+
+    <main class="contenedor">
+        <section class="links">
+            <a href="administracion.html">Administración</a>
+            <a href="Gestion norma.html">Gestión Norma</a>
+            <a href="Plan_trabajo.html">Plan de Trabajo</a>
+            <a href="#" class="activo">Ejecución de Actividades</a>
+            <a href="Reportes.html">Reportes</a>
+        </section>
+
+        <div class="contenido">
+
+            <section class="title">
+                <h1>Ejecución de Actividades</h1>
+            </section>
+
+            <!-- ========== PESTAÑAS + BOTÓN AÑADIR ========== -->
+            <div class="encabezado_seccion pestanas">
+                <div>
+                    <a href="#" class="pestana pestana_activa">Registro de Actividades</a>
+                    <a href="#" class="pestana">Revisión y Aprovación</a>
+                </div>
+                <button class="btn_generar">+Añadir actividad</button>
+            </div>
+
+            <!-- =====================================================
+                 LISTAS DE DESPLIEGUE (las 3 barras celestes de arriba)
+                 Cada <details> es una lista: el <summary> es la barra
+                 que se ve y lo que va dentro del <div class="acordeon_contenido">
+                 aparece al hacer clic.
+            ====================================================== -->
+            <section class="acordeones">
+
+                <!-- Lista de despliegue 1 -->
+                <details class="acordeon">
+                    <summary><span class="icono_alerta">▲</span> PE-PRX-GDPI-010-FR - Inspección SSMA y Calidad Primax / SGS</summary>
+                    <div class="acordeon_contenido">
+                        <!-- Aquí va el contenido del formato 010 -->
+                        <p>Contenido del formato PE-PRX-GDPI-010-FR.</p>
+                    </div>
+                </details>
+
+                <!-- Lista de despliegue 2 -->
+                <details class="acordeon">
+                    <summary><span class="icono_alerta">▲</span> PE-PRX-GDPI-014-FR - Checklist cierre técnico y administrativo</summary>
+                    <div class="acordeon_contenido">
+                        <!-- Aquí va el contenido del formato 014 -->
+                        <p>Contenido del formato PE-PRX-GDPI-014-FR.</p>
+                    </div>
+                </details>
+
+                <!-- Lista de despliegue 3 -->
+                <details class="acordeon">
+                    <summary><span class="icono_alerta">▲</span> PE-PRX-GDPI-016-FR - Evaluación de Contratista</summary>
+                    <div class="acordeon_contenido">
+                        <!-- Aquí va el contenido del formato 016 -->
+                        <p>Contenido del formato PE-PRX-GDPI-016-FR.</p>
+                    </div>
+                </details>
+
+            </section>
+            <!-- ================= FIN LISTAS DE DESPLIEGUE ================= -->
+
+            <!-- ========== HALLAZGOS ========== -->
+            <section class="tabla_1">
+                <div class="encabezado_seccion">
+                    <p>Hallazgo</p>
+                    <button class="btn_generar">+Añadir actividad</button>
+                </div>
+
+                <table class="tabla">
+                    <tr>
+                        <th>Hallazgo</th>
+                        <th>Responsable</th>
+                        <th>clasificación</th>
+                        <th>Requisito</th>
+                    </tr>
+                    <tr>
+                        <td>No conformidad en proceso</td>
+                        <td>Raquel Torres</td>
+                        <td><span class="vigente">Oportunidad de mejora</span></td>
+                        <td>Control de Inventarios</td>
+                    </tr>
+                    <tr>
+                        <td>Desviación en Inventario</td>
+                        <td>Carlos Ruiz</td>
+                        <td><span class="vigente">Oportunidad de mejora</span></td>
+                        <td>Procedimiento Seguridad</td>
+                    </tr>
+                    <tr>
+                        <td>Incumplimiento Procedimiento</td>
+                        <td>Maria Gomez</td>
+                        <td><span class="vigente">Oportunidad de mejora</span></td>
+                        <td>Producción y Service</td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
